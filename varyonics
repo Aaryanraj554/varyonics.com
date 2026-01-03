@@ -1,0 +1,171 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Varyonics - AI-Powered Fashion Network</title>
+  <style>
+    /* Reset & base */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+    body { line-height: 1.6; color: #333; background: #f5f5f5; }
+    a { text-decoration: none; color: inherit; }
+
+    /* Navbar */
+    nav { background: #1E1E1E; color: #fff; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; }
+    nav h1 { font-size: 1.8rem; font-weight: bold; }
+    nav ul { display: flex; list-style: none; }
+    nav ul li { margin-left: 20px; }
+    nav ul li a { color: #fff; font-weight: 500; }
+    nav button { background: #ff4c00; border: none; padding: 8px 15px; color: #fff; border-radius: 4px; cursor: pointer; }
+
+    /* Hero */
+    .hero { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; height: 80vh; background: linear-gradient(to right, #ff7e5f, #feb47b); color: #fff; }
+    .hero h2 { font-size: 2.5rem; margin-bottom: 20px; }
+    .hero p { font-size: 1.2rem; margin-bottom: 30px; max-width: 600px; }
+    .hero button { background: #fff; color: #ff4c00; padding: 10px 25px; border: none; border-radius: 5px; font-size: 1rem; cursor: pointer; }
+
+    /* Sections */
+    section { padding: 60px 30px; background: #fff; margin: 10px 0; }
+    section h2 { text-align: center; margin-bottom: 30px; font-size: 2rem; color: #ff4c00; }
+    .cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+    .card { background: #f9f9f9; padding: 20px; border-radius: 10px; width: 280px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s; }
+    .card:hover { transform: translateY(-5px); }
+    .card h3 { margin-bottom: 10px; color: #1E1E1E; }
+    .card p { font-size: 0.95rem; color: #555; }
+
+    /* Contact */
+    .contact { text-align: center; }
+    .contact a { margin: 0 10px; color: #ff4c00; font-weight: bold; }
+
+    /* Footer */
+    footer { background: #1E1E1E; color: #fff; text-align: center; padding: 20px; font-size: 0.9rem; }
+
+    /* Responsive */
+    @media(max-width:768px) { .cards { flex-direction: column; align-items: center; } }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h1>Varyonics</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#customer">Customer</a></li>
+      <li><a href="#retailer">Retailer</a></li>
+      <li><a href="#manufacturer">Manufacturer</a></li>
+      <li><a href="#wholesaler">Wholesaler</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button>Login</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h2>Discover Fashion Trends Near You</h2>
+    <p>Varyonics connects retailers, manufacturers, and customers with AI-powered insights and real-time trend analysis. Try before you buy, stay ahead of fashion, and save time & money.</p>
+    <button>Get Started</button>
+  </div>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Varyonics</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">Varyonics is an AI-driven platform that helps customers find trending apparel in local stores while providing retailers and manufacturers with actionable trend insights. Our platform solves issues like high returns, mismatched inventory, and slow production by connecting all players directly.</p>
+  </section>
+
+  <!-- Customer Section -->
+  <section id="customer">
+    <h2>Customers</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Discover Trends</h3>
+        <p>See trending products in your nearby stores instantly.</p>
+      </div>
+      <div class="card">
+        <h3>Try Before You Buy</h3>
+        <p>Physically check and try products before purchasing online.</p>
+      </div>
+      <div class="card">
+        <h3>Save Time & Money</h3>
+        <p>Find products, prices, and discounts easily without wasting time.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Retailer Section -->
+  <section id="retailer">
+    <h2>Retailers</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Increase Footfall</h3>
+        <p>Get more customers visiting your store with our platform.</p>
+      </div>
+      <div class="card">
+        <h3>Track Sales</h3>
+        <p>Use our POS QR system to manage sales and commissions effortlessly.</p>
+      </div>
+      <div class="card">
+        <h3>Get Insights</h3>
+        <p>Know what products are trending in your area in real-time.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Manufacturer Section -->
+  <section id="manufacturer">
+    <h2>Manufacturers</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Demand Forecasting</h3>
+        <p>Produce trending items faster with AI-driven insights.</p>
+      </div>
+      <div class="card">
+        <h3>Connect Directly</h3>
+        <p>Sell directly to retailers, avoiding middlemen delays.</p>
+      </div>
+      <div class="card">
+        <h3>Analytics</h3>
+        <p>Understand regional preferences and stock demand accurately.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wholesaler Section -->
+  <section id="wholesaler">
+    <h2>Wholesalers</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Supply Chain</h3>
+        <p>Manage your distribution efficiently to retailers and stores.</p>
+      </div>
+      <div class="card">
+        <h3>Track Orders</h3>
+        <p>Keep a real-time track of all orders and inventory.</p>
+      </div>
+      <div class="card">
+        <h3>Grow Business</h3>
+        <p>Reach more customers and retailers with insights and analytics.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p class="contact">CEO & Founder: Aryan Raj</p>
+    <p class="contact">Email: <a href="mailto:aryanraj55443345@gmail.com">aryanraj55443345@gmail.com</a></p>
+    <p class="contact">
+      LinkedIn: <a href="https://www.linkedin.com/in/aryan-raj-3226aa305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Aryan Raj</a> |  
+      Instagram: <a href="https://www.instagram.com/aryan_raj_03_?igsh=MXV2OTJwbWhkcWszbQ==" target="_blank">Aryan Raj</a> |  
+      Varyonics IG: <a href="https://www.instagram.com/varyonics?igsh=NXJtdngwMThraXhp" target="_blank">@varyonics</a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 Varyonics. All rights reserved. Designed by Aryan Raj.
+  </footer>
+
+</body>
+</html>
